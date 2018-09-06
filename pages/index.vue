@@ -1,9 +1,15 @@
 <template>
-  <section class="container">
-    <div>
+  <div>
+    <section>
       <app-logo/>
-    </div>
-  </section>
+    </section>
+
+    <section class="important-section">
+      <p class="1">Curiosity is the backbone of our studio. It pushes us to find new ways to animate, illustrate, write, and perpetually wonder if there's something missing that we can improve on.</p>
+
+      <p class="2">Have we peaked your curiosity? Get in touch and let’s see what we can create together.</p>
+    </section>
+  </div>
 </template>
 
 <script>
@@ -28,13 +34,39 @@ body {
   --ochre: #ba8537;
 }
 
-.container {
+.intro {
+  background-color: var(--black);
+  color: var(--gray1);
+  font-family: 'Lato', sans-serif;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: var(--black);
+  padding: 4% 8% 8% 8%;
+  width: 100%;
+  font-size: 3em;
+  line-height: 2;
 }
+
+.logo-image {
+  width: 35%;
+}
+
+.important-section {
+  background-color: var(--bg);
+  display: grid;
+  grid-gap: 5% 5%;
+  grid-template-areas: ". .";
+  grid-template-columns: 2fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  height: 100%;
+  padding: 7% 8% 15% 8%;
+  width: 100%;
+  font-size: 1.3em;
+  line-height: 1.75;
+}
+
+.2 { grid-area: 2; }
+
+.1 { grid-area: 1; }
+
+
 </style>
 

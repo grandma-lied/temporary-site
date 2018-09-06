@@ -10,7 +10,8 @@ module.exports = {
       { hid: 'A graphic design studio', name: 'A graphic design studio', content: 'A graphic design studio' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Lato:300'}
     ],
     modules: [
       // provide path to the file with resources

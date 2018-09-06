@@ -4,7 +4,7 @@
       Your grandmother ever tell you <br>
       “Curiosity killed the cat?” <br>
       We have some disturbing news: <br>
-      <img src="" alt="Your Grandma Lied logo" />
+      <img src="~/assets/img/logo.png" alt="Your Grandma Lied logo" class="logo-image"> <br>
       Even if she didn’t, we’re not cats. <br>
       (Either way, sorry you had to find out like this.)
     </p>
