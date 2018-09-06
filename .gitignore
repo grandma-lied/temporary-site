@@ -9,3 +9,6 @@ npm-debug.log
 
 # Nuxt generate
 # dist
+
+# Macs, yo
+.DS_Store
