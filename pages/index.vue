@@ -2,12 +2,6 @@
   <section class="container">
     <div>
       <app-logo/>
-      <h1 class="title">
-        Your Grandma Lied Studios
-      </h1>
-      <h2 class="subtitle">
-        Coming to you from New York, New York
-      </h2>
     </div>
   </section>
 </template>
@@ -23,33 +17,24 @@ export default {
 </script>
 
 <style>
+body {
+  --bg: white;
+  --bg-when-not-white: #eaf1e8;
+  --gray1: #d9d6d3;
+  --gray2: #a79f9d;
+  --gray3: #5a5553;
+  --gray4: #474342;
+  --black: #333132;
+  --ochre: #ba8537;
+}
+
 .container {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+  background: var(--black);
 }
 </style>
 
