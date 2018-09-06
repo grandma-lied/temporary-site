@@ -7,11 +7,13 @@
     <section class="important-section">
       <p class="1">Curiosity is the backbone of our studio. It pushes us to find new ways to animate, illustrate, write, and perpetually wonder if there's something missing that we can improve on.</p>
 
-      <p class="2">Have we peaked your curiosity? Get in touch and let’s see what we can create together.</p>
+      <p class="2">Have we peaked your curiosity? Get in touch and let’s see what we can create together. <br>
+        <button class="btn">Contact Us</button>
+      </p>
     </section>
 
-    <footer>
-        <img src="~/assets/img/top-logo.png" alt="Your Grandma Lied logo" class="logo-image">
+    <footer class="footer">
+        <img src="~/assets/img/logo.png" alt="Your Grandma Lied logo" class="logo-footer">
     </footer>
   </div>
 </template>
@@ -53,15 +55,29 @@ body {
   width: 35%;
 }
 
+.logo-footer {
+  width: 10%;
+}
+
+.btn {
+  text-align: center;
+  border: 2px solid var(--ochre);
+  border-radius: 50%;
+  display: inline-block;
+  padding: 2% 2%;
+  font-size: 1em;
+  color: var(--ochre);
+}
+
 .important-section {
   background-color: var(--bg);
   display: grid;
   grid-gap: 5% 5%;
   grid-template-areas: ". .";
-  grid-template-columns: 2fr 2fr 1fr;
+  grid-template-columns: 2fr 2fr 0.5fr;
   grid-template-rows: 1fr;
   height: 100%;
-  padding: 7% 8% 15% 8%;
+  padding: 7% 8% 5% 8%;
   width: 100%;
   font-size: 1.3em;
   line-height: 1.75;
@@ -72,8 +88,11 @@ body {
 .1 { grid-area: 1; }
 
 .footer {
+  align-items: center;
   display: flex;
   justify-content: center;
+  text-align: center;
+  padding: 4% 0 8% 0;
 }
 </style>
 
