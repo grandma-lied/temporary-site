@@ -9,6 +9,10 @@
 
       <p class="2">Have we peaked your curiosity? Get in touch and let’s see what we can create together.</p>
     </section>
+
+    <footer>
+        <img src="~/assets/img/top-logo.png" alt="Your Grandma Lied logo" class="logo-image">
+    </footer>
   </div>
 </template>
 
@@ -67,6 +71,9 @@ body {
 
 .1 { grid-area: 1; }
 
-
+.footer {
+  display: flex;
+  justify-content: center;
+}
 </style>
 
