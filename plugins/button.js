@@ -1,11 +1,8 @@
-import Vue from 'vue';
-import Buttons from 'buttons';
+/* eslint-disable */
 
-export default ({ app }, inject) => {
-  console.log("hi!");
+export default ({ app }) => {
 
   $('.button--bubble').each(function() {
-    console.log("hit");
     var $circlesTopLeft = $(this).parent().find('.circle.top-left');
     var $circlesBottomRight = $(this).parent().find('.circle.bottom-right');
 
@@ -52,5 +49,3 @@ export default ({ app }, inject) => {
     });
   });
 }
-
-Vue.use(Buttons)

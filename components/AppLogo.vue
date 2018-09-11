@@ -12,8 +12,5 @@
 </template>
 
 <style>
-.webdevhaschanged {
-
-}
 </style>
 
