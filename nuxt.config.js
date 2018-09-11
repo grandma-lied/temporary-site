@@ -16,7 +16,15 @@ module.exports = {
     modules: [
       // provide path to the file with resources
       ['nuxt-sass-resources-loader', './assets/main.scss']
-    ]
+    ],
+    script: [
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js' },
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js' },
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js' },
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js' },
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js' }
+    ],
+    plugins: ['~/plugins/button']
   },
   /*
   ** Customize the progress bar color
