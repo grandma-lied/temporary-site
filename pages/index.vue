@@ -5,9 +5,23 @@
     </section>
 
     <section class="important-section">
-      <p class="1">Curiosity is the backbone of our studio. It pushes us to find new ways to animate, illustrate, write, and perpetually wonder if there's something missing that we can improve on.</p>
+      <div class="sub-context">
+        <p>Your Grandma Lied is a curious design studio bringing things to life. We're a creative group of friends who are always trying to convince our clients that their illustrations should move, their apps should delight, their content should make you do a double-take, and their corporate events should also be a party. The people who hire us have class, taste, and good looks—so fire your personal trainer, it's a lot more fun to work with us.</p>
 
-      <div class="2">Have we peaked your curiosity? Get in touch and let’s see what we can create together. <br>
+        <p>As a studio these are some examples of the stuff we're great at:</p>
+
+        <ul>
+          <li>designing your restaurant, from the menus and the chairs and the accent plants to what dope neon sign you're using outside as your logo</li>
+          <li>getting a mural up on that blank wall in your office you've been dying to do something cool with for ages</li>
+          <li>getting your conference designed, from logo to signage to website to conference app to swag</li>
+          <li>designing festivals and retreats and workshops and parties and offsites
+          apps and websites that educate and inspire</li>
+        </ul>
+
+        <p>and your project, probably. We love throwing ourselves into everything we do.</p>
+      </div>
+
+      <div class="email">Have we peaked your curiosity? Get in touch and let’s see what we can create together. <br>
         <div class="whut">
           <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
             <defs>
@@ -36,6 +50,12 @@
             </span>
           </span>
         </div>
+      </div>
+
+      <div class="email-form">
+        Want to know what happens next? Sign up and you'll be the first to know.
+
+        <form style="text-align:center;clear:both;" action="https://tinyletter.com/yourgrandmailed" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/yourgrandmailed', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail">Enter your email address</label></p><p><input type="text" style="width:140px" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" /><p></p></form>
       </div>
     </section>
 
@@ -109,9 +129,9 @@ body {
   background-color: var(--bg);
   display: grid;
   grid-gap: 5% 5%;
-  grid-template-areas: ". .";
-  grid-template-columns: 2fr 2fr 0.5fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "sub-context" "email-us" "email-form";
   height: 100%;
   padding: 7% 8% 5% 8%;
   width: 100%;
@@ -119,9 +139,11 @@ body {
   line-height: 1.75;
 }
 
-.2 { grid-area: 2; }
+.email-us { grid-area: email-us; }
 
-.1 { grid-area: 1; }
+.sub-context { grid-area: sub-context; }
+
+.email-form { grid-area: email-form; }
 
 .footer {
   align-items: center;
