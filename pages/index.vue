@@ -60,6 +60,13 @@
     <footer class="footer">
         <img src="~/assets/img/logo.png" alt="Your Grandma Lied logo" class="logo-footer">
     </footer>
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@grandma_lied">
+    <meta name="twitter:creator" content="@helenvholmes">
+    <meta name="twitter:title" content="Your Grandma Lied.">
+    <meta name="twitter:description" content="Your grandmother ever tell you “Curiosity killed the cat?” We have some disturbing news: Your Grandma Lied. Even if she didn’t, we’re not cats. (Either way, sorry you had to find out like this.)">
+    <meta name="twitter:image" content="~/assets/img/twitter-card.png">
   </div>
 </template>
 
